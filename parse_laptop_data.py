@@ -9,7 +9,6 @@ so the data has been ported in as is.
 Our goal is to be able to parse this data with code, so that we can utilize it in our code.
 """
 
-import numpy
 
 
 laptops = [
@@ -141,6 +140,6 @@ def get_price_range():
         for models in i['types']:
             for computer_prices in models["price"]:
                 list_of_prices.append(computer_prices) 
-    print(f'({numpy.amin(list_of_prices)}, {numpy.amax(list_of_prices)})')
-#get_price_range()
+    print(f'({min(list_of_prices)}, {max(list_of_prices)})')
+get_price_range()
 # ^ Expected outcome: (999, 2799)
