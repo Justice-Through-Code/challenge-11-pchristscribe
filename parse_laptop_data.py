@@ -142,5 +142,5 @@ def get_price_range():
             for computer_prices in models["price"]:
                 list_of_prices.append(computer_prices) 
     print(f'({numpy.amin(list_of_prices)}, {numpy.amax(list_of_prices)})')
-get_price_range()
+#get_price_range()
 # ^ Expected outcome: (999, 2799)
